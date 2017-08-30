@@ -1,0 +1,150 @@
+<html>
+	<head><title>Aplicação Conjunto de Treino RNA Brain.js</title>
+		<style type="text/css">
+		.resultados{
+		font-family: "Arial";
+		border: inset 2px #699;
+		background-color: #ccc;
+		display:none}
+		
+		.texto{
+		font-family: "Arial";
+		display:none;
+		}
+		
+		.pverb{
+		font-family: "Arial";
+		margin: 5px auto;
+		background-color:rgb(109, 122, 189);
+		display:none}
+		
+		.nbody{
+		font-family: "Arial";
+		width:50%;		
+		align-self: center;
+		margin:auto; 
+		position:relative;
+		//border: inset 2px #699;
+		}
+		
+		
+		.entrada {
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		}
+		
+		#botao{
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		}
+		
+		#desc {
+		font-family: "Arial";
+		padding: 9px 14px;
+		background-color: #F0F0F0;
+		}
+		
+		.nbody2{
+		color:white;
+		font-family: "Arial"
+		width:24%;
+		text-align:center;
+		align-self: center;
+		margin:auto;
+		position:relative;
+		background-color:rgb(128,128,128);
+		display:none}
+		
+		.nbodyy{
+ 		border-radius: 25px;
+   		border: 2px solid #73AD21;
+   		padding: 20px;
+		font-family: "Arial";
+		width:24%;
+		text-align:center;
+		align-self: center;
+		margin:auto;
+		position:relative;
+		display:none}
+		
+		#ptreino{
+		font-family: "Arial";
+		text-align:center;
+		display:none;}
+		
+		#clear{
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		display:none;}
+
+		#lfinal{
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		display:none;}
+
+		#bfinal{
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		display:none
+		}
+		
+		.finais{
+		font-family: "Arial";
+		display:none
+		}
+		
+		.entrada2{
+		font-family: "Arial";
+		align-self: center;
+		margin:0 auto;
+		display:none
+		}
+		
+		</style>
+		<script type="text/javascript" src="jquery-3.2.1.js"></script>
+		<script src='jquery.blockUI.js'></script>
+		<script src='brain-0.6.3.min.js'></script>
+		<script type="text/javascript"src='algo.js'></script>
+		
+	</head>
+	<body>
+	<a href="https://github.com/paulogcosta"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
+	<div id="desc">aplicação para criação de conjunto de treino para encontrar verbos em português com a biblioteca de redes neurais brain.js.</div>
+	<div class="nbody"><br>
+	Insira um texto no campo:
+		<input class="entrada">
+		<button id="botao">Inserir texto base</button>
+		<button id='clear'>Resetar</button>
+		<div class="resultados">
+		<p class="texto"></p>
+		</div>
+		<p id='ptreino'>Clique nas palavras em verde apenas quando forem verbos em seu contexto, assim serão adicionados ao conjunto de treino.</p>
+		<div id='p2'></div>
+	</div>	
+	
+	<div class='nbodyy'><p id='ct'>Conjunto de Treino<br></p>
+	<div class="nbody2">
+	
+	<p id='tinput0'>([</p>
+	<p id='tinput'></p>
+	<p id='tinput2'>])</p>
+	<p id='tinput3'></p>
+	
+	
+	</div>
+	<button id='treino'>Treinar</button><br>
+	<br><p class='finais'>Insira no campo abaixo, o texto que você quer encontrar os verbos</p><br>
+	<input class='entrada2'></input><button id='bfinal'>Inserir texto</button><button id='lfinal'>Limpar</button>
+	<p class='finais'> As palavras com mais de 50% de chance de serem verbos estarão em verde:</p><br>
+	<p class='finais' id='final'></p>
+	</div>
+	
+	</body>
+</html>
+
+
