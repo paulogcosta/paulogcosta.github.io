@@ -1,4 +1,4 @@
-[{'word': 'e', 'amount': 14377, 'relevance': '0.03870309500927399116'}
+{'data':[{'word': 'e', 'amount': 14377, 'relevance': '0.03870309500927399116'}
 {'word': 'de', 'amount': 12447, 'relevance': '0.03350750668292643702'}
 {'word': 'que', 'amount': 9674, 'relevance': '0.02604254998398251170'}
 {'word': 'o', 'amount': 9483, 'relevance': '0.02552837518070148401'}
@@ -197,4 +197,4 @@
 {'word': 'todas', 'amount': 244, 'relevance': '0.00065685158115482041'}
 {'word': 'meio', 'amount': 244, 'relevance': '0.00065685158115482041'}
 {'word': 'fogo', 'amount': 244, 'relevance': '0.00065685158115482041'}
-{'word': 'vamos', 'amount': 244, 'relevance': '0.00065685158115482041'}]
+{'word': 'vamos', 'amount': 244, 'relevance': '0.00065685158115482041'}]}
