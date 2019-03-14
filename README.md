@@ -1,5 +1,5 @@
 # paulogcosta.github.io
-Demo da aplicação: aplication_training
+Simple engine to create machine learning training set to find verbs in portuguese language.
 
 Trata-se de um protótipo JavaScript (algo.js) para criação de conjunto de treino para redes neurais artificiais (biblioteca brain.js)
 com o intuito de encontrar verbos em textos de lingua portuguesa.
